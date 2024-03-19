@@ -1,0 +1,25 @@
+{
+  "auth_token": {
+    "display_name": "Auth Token",
+    "description": "Please enter your authtoken",
+    "type": "text",
+    "required": true
+  },
+  "domain": {
+    "display_name": "Domain Name",
+    "description": "Please enter your domain",
+    "type": "text",
+    "required": true
+  },
+  "api_key": {
+    "display_name": "Api Key",
+    "description": "Please enter your api key",
+    "type": "text",
+    "required": true
+  },
+  "external_hook_domain": {
+    "display_name": "External Event Domain Name",
+    "description": "For staging stack use 'hooks-fa-staging.freshcloud.io' and for production after installing check logs for webhook domain and update the settings",
+    "type": "text"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "get_conversation": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= iparam.domain %>",
+      "path": "/api/v2/tickets/<%= context.id %>?include=conversations",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key) %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}

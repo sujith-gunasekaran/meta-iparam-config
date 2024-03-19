@@ -1,0 +1,24 @@
+{
+  "client_id": "<%= oauth_iparams.client_id%>",
+  "client_secret": "<%= oauth_iparams.client_secret%>",
+  "authorize_url": "https://login.live.com/oauth20_authorize.srf",
+  "token_url": "https://login.live.com/oauth20_token.srf",
+  "options": {
+    "scope": "offline_access onedrive.readwrite"
+  },
+  "token_type": "account",
+  "oauth_iparams": {
+    "client_id": {
+      "display_name": "client_id",
+      "description": "Please enter your client_id",
+      "type": "text",
+      "required": true
+    },
+    "client_secret": {
+      "display_name": "client_secret",
+      "description": "Please enter your client_secret",
+      "type": "text",
+      "required": true
+    }
+  }
+}
