@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jest test --coverage"
   },
+  "metaConfig": {
+    "framework": "react",
+    "packageManager": "pnpm"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -40,7 +44,9 @@
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "^.+\\.svg$": "jest-svg-transformer",
-      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+      "^app/(.*)$": "./app",
+      "^config/(.*)$": "./config"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"

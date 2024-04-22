@@ -11,8 +11,20 @@ jest.mock('@freshworks/crayons/react', () => {
   }
 });
 
+jest.mock('react-router-dom', () => {
+  const originalModule = jest.requireActual('react-router-dom');
+  return {
+    __esModule: true,
+    ...originalModule,
+    BrowserRouter: () => <div />,
+    Routes: () => <div />,
+    Route: () => <div />,
+    Link: () => <div />
+  };
+});
+
 test('renders learn react link', () => {
   const result = render(<App client={{}} />);
-  const linkElement = screen.getByText(/Test - 1/i);
+  const linkElement = screen.getByText(/Test - 190/i);
   expect(linkElement).toBeInTheDocument();
 });
