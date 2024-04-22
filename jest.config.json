@@ -1,0 +1,22 @@
+{
+  "testEnvironment": "jsdom",
+  "moduleNameMapper": {
+    "^.+\\.svg$": "jest-svg-transformer",
+    "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+    "^app/(.*)$": "./app",
+    "^config/(.*)$": "./config"
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/setupTests.js"
+  ],
+  "collectCoverageFrom": [
+    "app/**/*.jsx",
+    "app/**/*.js",
+    "app/**/*.tsx",
+    "app/**/*.ts"
+  ],
+  "testMatch": [
+    "**/tests/**/*.js",
+    "**/?(*.)+(spec|test).js"
+  ]
+}
